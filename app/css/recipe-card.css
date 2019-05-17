@@ -1,0 +1,38 @@
+/* Text Styles Import */
+@import url("https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise");
+/* Variables */
+.main-copy {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 28px;
+  line-height: 32px; }
+  .main-copy p {
+    margin: 0px; }
+
+#recipe-card {
+  width: 400px;
+  height: 512px;
+  background-image: url(../images/BG/recipe-card.png);
+  background-size: cover;
+  position: relative;
+  margin-top: 63px;
+  transform: rotate(3deg); }
+  #recipe-card #recipe-canvas {
+    position: absolute;
+    top: 58px;
+    left: 32px;
+    right: 0px;
+    margin: auto; }
+  #recipe-card .copy {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 25px; }
+  #recipe-card p {
+    font-family: "Waiting for the Sunrise", cursive;
+    font-size: 28px;
+    line-height: 26px; }
+  #recipe-card p:nth-of-type(2) {
+    padding-top: 24px; }
+  #recipe-card p.recipe-title {
+    text-transform: uppercase; }

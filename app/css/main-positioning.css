@@ -1,0 +1,9 @@
+div#copy-one {
+  margin: 66px 0px 0px 40px;
+  display: inline-block; }
+
+#vfd-canvas {
+  position: absolute;
+  left: 270px;
+  top: 45px;
+  transform: rotate(-12deg); }

@@ -8,8 +8,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/turn.js"></script>
 
 </head>
 
@@ -20,10 +20,11 @@
 			<div id="overflow-wrapper">
 				<div class="notebook-paper">
 
-					<div id="notebook-background-paper"
+
+           <div id="flipbook">
 
 					<!-- Left Page / PAGE 01 -->
-						<div class="left-page odd page">
+						<div ignore ="1" class="left-page">
 							<div class="main-copy" id="copy-one">
 								<p>V.F.D ?</p>
 								<p>Al Funcoot</p>
@@ -43,13 +44,11 @@
 							  </div>
 							</div>
 
-							<div class="page-corner"></div>
-
 						</div>
 						<!-- Left Page / PAGE 01 END -->
 
 		       <!-- Right Page / PAGE 02 -->
-						<div class="right-page even page">
+						<div class="right-page">
 
 							<div id="tram-ticket">
 								<div class="title">CITY TRAMWAY</div>
@@ -78,33 +77,26 @@
 								 <div class="footer"><span>1c</span>78739</div>
 							</div>
 
-							<div class="page-corner"></div>
-
 						</div>
 		         <!-- Right Page / PAGE 02 END -->
-						 <div class="centerfold"></div>
 
-			 </div>
-
-		   <div class="notebook-paper book-section 2" style="display:none;">
 						 <!-- Left Page / PAGE 03 -->
-							 <div class="left-page odd page" style="background-color: red;">
-
-                 <div class="page-corner"></div>
+							 <div class="left-page">
 							 </div>
 							 <!-- Left Page / PAGE 03 END -->
 
 							 <!-- Right Page / PAGE 04 -->
-							 <div class="right-page even page">
-
-
-                  <div class="page-corner"></div>
+							 <div class="right-page">
 							 </div>
 								 <!-- Right Page / PAGE 04 END -->
 
 
-			       <div class="centerfold"></div>
-					</div>
+
+
+
+			 </div> <!-- Flipbook END -->
+
+			    <!-- <div class="centerfold"></div> -->
 
 		</div>
 		</div>
@@ -117,4 +109,11 @@
 
 <script type="text/javascript" src="../node_modules/roughjs/dist/rough.js"></script>
 <script type="text/javascript" src="js/sketch.js"></script>
-<script type="text/javascript" src="js/page-turn.js"></script>
+
+<script type="text/javascript">
+	$("#flipbook").turn({
+		width: 996,
+		height: 720,
+		autoCenter: false
+	});
+</script>
